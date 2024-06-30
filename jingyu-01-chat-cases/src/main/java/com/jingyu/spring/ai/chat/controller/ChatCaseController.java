@@ -1,4 +1,4 @@
-package com.jingyu.spring.ai.cases.controller;
+package com.jingyu.spring.ai.chat.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.ai.ollama.OllamaChatModel;
@@ -6,29 +6,22 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import reactor.core.publisher.Flux;
 
 /**
- * openai hello world
+ * 使用模型问答
  *
  * @author JingYu
- * @date 2024/06/29
+ * @date 2024/06/30
  */
 @AllArgsConstructor
-@RequestMapping("/cases")
+@RequestMapping("/chat")
 @RestController
-public class HelloWorldController {
+public class ChatCaseController {
 
     private final OllamaChatModel ollamaChatModel;
-
-
-    @GetMapping("/hello")
+    @GetMapping
     String chat(@RequestParam String message) {
-        return ollamaChatModel.call(message);
-    }
-
-    @GetMapping("/stream/hello")
-    Flux<String> chatStream(@RequestParam String message) {
-        return ollamaChatModel.stream(message);
+        return ollamaChatModel
+                .call(message);
     }
 }

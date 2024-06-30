@@ -6,10 +6,17 @@
     <parent>
         <groupId>com.jingyu</groupId>
         <artifactId>jingyu-spring-ai-llm-apps</artifactId>
-        <!--        <version>0.0.1-SNAPSHOT</version>-->
-        <version>${revision}</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>jingyu-01-chat-models</artifactId>
+    <groupId>com.jingyu.spring.ai.embeding</groupId>
+    <artifactId>jingyu-02-embedding-cases</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-ollama-spring-boot-starter</artifactId>
+            <version>${spring-ai.version}</version>
+        </dependency>
+    </dependencies>
 </project>
