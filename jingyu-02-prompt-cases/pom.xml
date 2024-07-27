@@ -8,9 +8,7 @@
         <artifactId>jingyu-spring-ai-llm-apps</artifactId>
         <version>${revision}</version>
     </parent>
-
-    <groupId>com.jingyu.spring.ai.cases</groupId>
-    <artifactId>jingyu-00-hello-cases</artifactId>
+    <artifactId>jingyu-02-prompt-cases</artifactId>
 
     <dependencies>
         <dependency>

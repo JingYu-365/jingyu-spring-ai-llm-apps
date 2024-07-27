@@ -19,9 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class ChatCaseController {
 
     private final OllamaChatModel ollamaChatModel;
+
     @GetMapping
     String chat(@RequestParam String message) {
-        return ollamaChatModel
-                .call(message);
+        return ollamaChatModel.call(message);
     }
 }

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "张三",
+    "age": 30,
+    "is_student": false,
+    "hobbies": [
+      "阅读",
+      "游泳",
+      "旅行"
+    ],
+    "address": {
+      "city": "北京",
+      "district": "朝阳区",
+      "street": "幸福大街"
+    }
+  }
+]

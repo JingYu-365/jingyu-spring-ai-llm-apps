@@ -9,8 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <groupId>com.jingyu.spring.ai.cases</groupId>
-    <artifactId>jingyu-00-hello-cases</artifactId>
+    <artifactId>jingyu-04-embedding-cases</artifactId>
 
     <dependencies>
         <dependency>
@@ -18,5 +17,4 @@
             <artifactId>spring-ai-ollama-spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
-
 </project>

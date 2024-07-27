@@ -29,7 +29,7 @@ public class ChatOptionCaseController {
                 message,
                 new OllamaOptions()
                         .withTemperature(0.2f)      // 设置回话温度，温度越高回答越发散
-                        .withModel("llama3")        // 设置本次会话使用的模型，会覆盖application中配置的。
+                        .withModel("llama3.1")        // 设置本次会话使用的模型，会覆盖application中配置的。
         ));
     }
 }
