@@ -24,22 +24,15 @@ public class EmbeddingController {
 
     private final OllamaEmbeddingModel ollamaEmbeddingModel;
 
-    @GetMapping("/msg")
-    public Map embed(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
-        EmbeddingResponse embeddingResponse = ollamaEmbeddingModel.embedForResponse(List.of(message));
-        return Map.of("embedding", embeddingResponse);
-    }
-
     /**
-     * 将向量化数据存储到向量数据库
+     * 将文本内容向量化
      *
-     * @param message 信息
-     * @return
+     * @param message 文本
+     * @return 向量化数据
      */
-    @GetMapping("/msg/vector")
-    public Map embedAndOptions(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
+    @GetMapping("/text")
+    public Map<String, ?> embed(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
         EmbeddingResponse embeddingResponse = ollamaEmbeddingModel.embedForResponse(List.of(message));
-
         return Map.of("embedding", embeddingResponse);
     }
 

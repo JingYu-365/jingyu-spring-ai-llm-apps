@@ -3,8 +3,15 @@ spring:
     ollama:
       chat:
         options:
-          model: llama3.1
-          temperature: 0.7
+          model: llama3
+          temperature: 0.5
       base-url: http://localhost:11434
       embedding:
-        model: llama3.1
+        model: llama3
+    vectorstore:
+      chroma:
+        client:
+          host: http://localhost
+          port: 8000
+        collection-name: "jingyu-spring-ai"
+        initialize-schema: true     # 如果chromadb中没有collection-name，那么此处需要设置为true，否者会404报错

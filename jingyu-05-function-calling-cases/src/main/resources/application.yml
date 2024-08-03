@@ -1,0 +1,8 @@
+spring:
+  ai:
+    ollama:
+      chat:
+        options:
+          model: llama3
+          temperature: 0.5
+      base-url: http://localhost:11434

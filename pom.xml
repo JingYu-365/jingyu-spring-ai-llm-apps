@@ -19,9 +19,9 @@
         <module>jingyu-00-hello-cases</module>
         <module>jingyu-01-chat-cases</module>
         <module>jingyu-02-prompt-cases</module>
-        <module>jingyu-04-embedding-cases</module>
-        <module>jingyu-05-embedding-vector-cases</module>
         <module>jingyu-03-etl-cases</module>
+        <module>jingyu-04-embedding-cases</module>
+        <module>jingyu-05-function-calling-cases</module>
     </modules>
 
     <developers>

@@ -6,10 +6,17 @@
     <parent>
         <groupId>com.jingyu</groupId>
         <artifactId>jingyu-spring-ai-llm-apps</artifactId>
-        <version>${revision}</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>jingyu-05-embedding-vector-cases</artifactId>
+    <groupId>com.jingyu.spring.ai.function.calling</groupId>
+    <artifactId>jingyu-05-function-calling-cases</artifactId>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
 
     <dependencies>
@@ -17,11 +24,7 @@
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-ollama-spring-boot-starter</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-chroma-store-spring-boot-starter</artifactId>
-        </dependency>
     </dependencies>
+
 
 </project>

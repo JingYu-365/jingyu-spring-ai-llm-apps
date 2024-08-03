@@ -1,17 +1,18 @@
-package com.jingyu.spring.ai.embeding.vector;
+package com.jingyu.spring.ai.function.calling;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Prompt App
+ * function calling app
  *
  * @author JingYu
- * @date 2024/06/30
+ * @date 2024/07/29
  */
+
 @SpringBootApplication
-public class EmbeddingVectorCasesApp {
+public class FunctionCallingApp {
     public static void main(String[] args) {
-        SpringApplication.run(EmbeddingVectorCasesApp.class, args);
+        SpringApplication.run(FunctionCallingApp.class, args);
     }
 }
